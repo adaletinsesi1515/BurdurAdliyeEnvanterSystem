@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,27 +35,21 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
                         };
 
             gridControl1.DataSource = deger.ToList();
+                        
+
+        }
+
+        void MarkaEkle()
+        {
+            var deger = db.TBLMARKALAR.ToList();
+            cmbmarka.DataSource = deger;
+            cmbmarka.DisplayMember = "MARKAADI";
         }
         private void FrmBilgisayarKayit_Load(object sender, EventArgs e)
         {
-            
-            Listeleme();
-            lookmarka.Properties.DataSource = (from x in db.TBLMARKALAR
-                                               select new
-                                               {
-                                                   x.ID,
-                                                   x.MARKAADI
-                                               }).ToList();
 
-            lookmodel.Properties.DataSource = (from x in db.TBLMODELLER
-                                               select new
-                                               {
-                                                   x.ID,
-                                                   MARKA = x.TBLMARKALAR.MARKAADI,
-                                                   x.MODELADI
-                                               }).ToList();
-            lookmarka.Properties.NullText = "Marka Seçiniz";
-            lookmodel.Properties.NullText = "Model Seçiniz";
+            Listeleme();
+            MarkaEkle();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -74,16 +69,19 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
         {
             txtid.Text = "";
             txtserino.Text = "";
-            lookmarka.Text = "";
-            lookmodel.Text = "";
+            cmbmarka.Text = "";
+            cmbModel.Text = "";
+            chkzimmet.Checked = false;
+
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             TBLBILGISAYARLAR t = new TBLBILGISAYARLAR();
 
-            t.MARKAID = byte.Parse(lookmarka.EditValue.ToString());
-            t.MODELID = byte.Parse(lookmodel.EditValue.ToString());
+            t.MARKAID = (cmbmarka.SelectedItem as TBLMARKALAR).ID;
+
+            t.MODELID = (cmbModel.SelectedItem as TBLMODELLER).ID;
             t.SERINO = txtserino.Text;
             t.STATUS = true;
             if (chkzimmet.Checked == true)
@@ -105,9 +103,9 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
         {
             int id = int.Parse(txtid.Text);
             var deger = db.TBLBILGISAYARLAR.Find(id);
-            deger.MARKAID = byte.Parse(cmbmarka.Text);
-            deger.MODELID= byte.Parse(lookmodel.EditValue.ToString());
-            deger.SERINO= txtserino.Text;
+            deger.MARKAID = (cmbmarka.SelectedItem as TBLMARKALAR).ID;
+            deger.MODELID = (cmbModel.SelectedItem as TBLMODELLER).ID;
+            deger.SERINO = txtserino.Text;
             if (chkzimmet.Checked == true)
             {
                 deger.ZIMMET = true;
@@ -119,6 +117,38 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             db.SaveChanges();
             MessageBox.Show("Bilgisayar kaydı güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listeleme();
+        }
+
+        private void cmbmarka_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var deger = db.TBLMODELLER.Where(x => x.MARKAID == cmbmarka.SelectedIndex + 1).ToList();
+            cmbModel.DataSource = deger;
+            cmbModel.DisplayMember = "MODELADI";
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtid.Text);
+            var deger = db.TBLBILGISAYARLAR.Find(id);
+            deger.STATUS = false;
+            deger.ZIMMET = false;
+            db.SaveChanges();
+            MessageBox.Show("Bilgisayar pasif duruma alındı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Listeleme();
+        }
+
+        private void gridView1_RowCellStyle(object sender, RowCellStyleEventArgs e)
+        {
+            GridView view = sender as GridView;
+            
+            
+            bool deger = Convert.ToBoolean(view.GetRowCellValue(e.RowHandle, "STATUS"));
+            if (deger == false)
+            {
+                e.Appearance.BackColor = Color.Red;
+            }
+            
+
         }
     }
 }

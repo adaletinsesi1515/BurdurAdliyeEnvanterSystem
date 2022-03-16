@@ -69,6 +69,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView1_RowCellStyle);
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // labelControl1
@@ -77,7 +78,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(743, 71);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(28, 31);
+            this.labelControl1.Size = new System.Drawing.Size(23, 25);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "ID ";
             // 
@@ -88,7 +89,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.txtid.Name = "txtid";
             this.txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.txtid.Properties.Appearance.Options.UseFont = true;
-            this.txtid.Size = new System.Drawing.Size(80, 34);
+            this.txtid.Size = new System.Drawing.Size(80, 30);
             this.txtid.TabIndex = 2;
             // 
             // chkzimmet
@@ -98,7 +99,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.chkzimmet.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.chkzimmet.Properties.Appearance.Options.UseFont = true;
             this.chkzimmet.Properties.Caption = "Zimmetli mi?";
-            this.chkzimmet.Size = new System.Drawing.Size(149, 35);
+            this.chkzimmet.Size = new System.Drawing.Size(149, 29);
             this.chkzimmet.TabIndex = 4;
             // 
             // labelControl2
@@ -107,7 +108,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(743, 115);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(96, 31);
+            this.labelControl2.Size = new System.Drawing.Size(78, 25);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "MARKASI";
             // 
@@ -117,7 +118,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(743, 163);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(83, 31);
+            this.labelControl3.Size = new System.Drawing.Size(68, 25);
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "MODELİ";
             // 
@@ -127,7 +128,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(743, 207);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(166, 31);
+            this.labelControl4.Size = new System.Drawing.Size(135, 25);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "SERİ NUMARASI";
             // 
@@ -137,7 +138,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.txtserino.Name = "txtserino";
             this.txtserino.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.txtserino.Properties.Appearance.Options.UseFont = true;
-            this.txtserino.Size = new System.Drawing.Size(251, 34);
+            this.txtserino.Size = new System.Drawing.Size(251, 30);
             this.txtserino.TabIndex = 8;
             // 
             // labelControl5
@@ -148,7 +149,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(12, 12);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(570, 45);
+            this.labelControl5.Size = new System.Drawing.Size(460, 37);
             this.labelControl5.TabIndex = 10;
             this.labelControl5.Text = "BİLGİSAYAR DEPO GİRİŞ KAYIT FORMU";
             // 
@@ -186,6 +187,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.btnSil.Size = new System.Drawing.Size(100, 50);
             this.btnSil.TabIndex = 13;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnTemizle
             // 
@@ -205,7 +207,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(42, 34);
+            this.textEdit1.Size = new System.Drawing.Size(42, 30);
             this.textEdit1.TabIndex = 15;
             // 
             // cmbmarka
@@ -214,8 +216,9 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.cmbmarka.FormattingEnabled = true;
             this.cmbmarka.Location = new System.Drawing.Point(899, 114);
             this.cmbmarka.Name = "cmbmarka";
-            this.cmbmarka.Size = new System.Drawing.Size(251, 36);
+            this.cmbmarka.Size = new System.Drawing.Size(251, 30);
             this.cmbmarka.TabIndex = 16;
+            this.cmbmarka.SelectedIndexChanged += new System.EventHandler(this.cmbmarka_SelectedIndexChanged);
             // 
             // cmbModel
             // 
@@ -223,13 +226,13 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.cmbModel.FormattingEnabled = true;
             this.cmbModel.Location = new System.Drawing.Point(899, 162);
             this.cmbModel.Name = "cmbModel";
-            this.cmbModel.Size = new System.Drawing.Size(251, 36);
+            this.cmbModel.Size = new System.Drawing.Size(251, 30);
             this.cmbModel.TabIndex = 17;
             // 
             // FrmBilgisayarKayit
             // 
             this.AcceptButton = this.btnKaydet;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(99)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1268, 989);
