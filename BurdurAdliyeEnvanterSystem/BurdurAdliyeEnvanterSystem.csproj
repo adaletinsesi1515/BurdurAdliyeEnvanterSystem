@@ -64,6 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbBurdurAdliyeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbBurdurAdliyeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmBilgisayarKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +163,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DbBurdurAdliyeDataSet.xsc">
+      <DependentUpon>DbBurdurAdliyeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbBurdurAdliyeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbBurdurAdliyeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbBurdurAdliyeDataSet.xss">
+      <DependentUpon>DbBurdurAdliyeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
