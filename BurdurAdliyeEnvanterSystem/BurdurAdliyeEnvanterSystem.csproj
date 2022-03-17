@@ -75,6 +75,42 @@
     <Compile Include="Formlar\FrmBilgisayarKayit.Designer.cs">
       <DependentUpon>FrmBilgisayarKayit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmBirimKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmBirimKayit.Designer.cs">
+      <DependentUpon>FrmBirimKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmMarkaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmMarkaKayit.Designer.cs">
+      <DependentUpon>FrmMarkaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmModelKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmModelKayit.Designer.cs">
+      <DependentUpon>FrmModelKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmTarayiciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmTarayiciKayit.Designer.cs">
+      <DependentUpon>FrmTarayiciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmUnvanKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmUnvanKayit.Designer.cs">
+      <DependentUpon>FrmUnvanKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYaziciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYaziciKayit.Designer.cs">
+      <DependentUpon>FrmYaziciKayit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FullForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +182,24 @@
     <EmbeddedResource Include="Formlar\FrmBilgisayarKayit.resx">
       <DependentUpon>FrmBilgisayarKayit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmBirimKayit.resx">
+      <DependentUpon>FrmBirimKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmMarkaKayit.resx">
+      <DependentUpon>FrmMarkaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmModelKayit.resx">
+      <DependentUpon>FrmModelKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmTarayiciKayit.resx">
+      <DependentUpon>FrmTarayiciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmUnvanKayit.resx">
+      <DependentUpon>FrmUnvanKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYaziciKayit.resx">
+      <DependentUpon>FrmYaziciKayit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FullForm.resx">
       <DependentUpon>FullForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,7 +231,6 @@
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
-    <None Include="Notlar\DbBurdurAdliye.bak" />
     <None Include="Notlar\VERİTABANI.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

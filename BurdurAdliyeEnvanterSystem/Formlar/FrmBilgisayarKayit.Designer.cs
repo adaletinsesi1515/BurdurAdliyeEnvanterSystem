@@ -57,8 +57,10 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 72);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridControl1.Location = new System.Drawing.Point(12, 71);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(684, 706);
             this.gridControl1.TabIndex = 0;
@@ -77,6 +79,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(743, 71);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(23, 25);
             this.labelControl1.TabIndex = 1;
@@ -85,16 +88,18 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // txtid
             // 
             this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(899, 69);
+            this.txtid.Location = new System.Drawing.Point(900, 69);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtid.Name = "txtid";
             this.txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.txtid.Properties.Appearance.Options.UseFont = true;
-            this.txtid.Size = new System.Drawing.Size(80, 30);
+            this.txtid.Size = new System.Drawing.Size(79, 30);
             this.txtid.TabIndex = 2;
             // 
             // chkzimmet
             // 
-            this.chkzimmet.Location = new System.Drawing.Point(899, 255);
+            this.chkzimmet.Location = new System.Drawing.Point(900, 255);
+            this.chkzimmet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkzimmet.Name = "chkzimmet";
             this.chkzimmet.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.chkzimmet.Properties.Appearance.Options.UseFont = true;
@@ -107,6 +112,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(743, 115);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(78, 25);
             this.labelControl2.TabIndex = 5;
@@ -117,6 +123,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(743, 163);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(68, 25);
             this.labelControl3.TabIndex = 6;
@@ -127,6 +134,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(743, 207);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(135, 25);
             this.labelControl4.TabIndex = 7;
@@ -134,7 +142,8 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // 
             // txtserino
             // 
-            this.txtserino.Location = new System.Drawing.Point(899, 205);
+            this.txtserino.Location = new System.Drawing.Point(900, 205);
+            this.txtserino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtserino.Name = "txtserino";
             this.txtserino.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.txtserino.Properties.Appearance.Options.UseFont = true;
@@ -148,6 +157,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(12, 12);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(460, 37);
             this.labelControl5.TabIndex = 10;
@@ -159,6 +169,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.btnKaydet.Appearance.Options.UseFont = true;
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
             this.btnKaydet.Location = new System.Drawing.Point(743, 305);
+            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(100, 50);
             this.btnKaydet.TabIndex = 11;
@@ -171,6 +182,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.BtnGuncelle.Appearance.Options.UseFont = true;
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
             this.BtnGuncelle.Location = new System.Drawing.Point(858, 305);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(100, 50);
             this.BtnGuncelle.TabIndex = 12;
@@ -183,6 +195,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.btnSil.Appearance.Options.UseFont = true;
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
             this.btnSil.Location = new System.Drawing.Point(973, 305);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(100, 50);
             this.btnSil.TabIndex = 13;
@@ -195,6 +208,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.btnTemizle.Appearance.Options.UseFont = true;
             this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
             this.btnTemizle.Location = new System.Drawing.Point(1089, 305);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.Size = new System.Drawing.Size(100, 50);
             this.btnTemizle.TabIndex = 14;
@@ -203,7 +217,8 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(1108, 256);
+            this.textEdit1.Location = new System.Drawing.Point(1109, 255);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
@@ -214,7 +229,8 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // 
             this.cmbmarka.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbmarka.FormattingEnabled = true;
-            this.cmbmarka.Location = new System.Drawing.Point(899, 114);
+            this.cmbmarka.Location = new System.Drawing.Point(900, 114);
+            this.cmbmarka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbmarka.Name = "cmbmarka";
             this.cmbmarka.Size = new System.Drawing.Size(251, 30);
             this.cmbmarka.TabIndex = 16;
@@ -224,7 +240,8 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             // 
             this.cmbModel.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbModel.FormattingEnabled = true;
-            this.cmbModel.Location = new System.Drawing.Point(899, 162);
+            this.cmbModel.Location = new System.Drawing.Point(900, 162);
+            this.cmbModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbModel.Name = "cmbModel";
             this.cmbModel.Size = new System.Drawing.Size(251, 30);
             this.cmbModel.TabIndex = 17;
@@ -235,7 +252,7 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(99)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1268, 989);
+            this.ClientSize = new System.Drawing.Size(1267, 989);
             this.Controls.Add(this.cmbModel);
             this.Controls.Add(this.cmbmarka);
             this.Controls.Add(this.textEdit1);

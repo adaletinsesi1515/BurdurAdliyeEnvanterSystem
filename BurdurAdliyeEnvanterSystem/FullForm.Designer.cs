@@ -33,19 +33,21 @@ namespace BurdurAdliyeEnvanterSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullForm));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.BtnBilgisayarKaydi = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnYaziciKaydi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTarayiciKaydi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMarkaKayit = new DevExpress.XtraBars.BarButtonItem();
+            this.btnModelKayit = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBirimKayit = new DevExpress.XtraBars.BarButtonItem();
+            this.btnUnvanKayit = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -59,6 +61,7 @@ namespace BurdurAdliyeEnvanterSystem
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -81,21 +84,23 @@ namespace BurdurAdliyeEnvanterSystem
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
             this.BtnBilgisayarKaydi,
-            this.barButtonItem2,
-            this.barButtonItem3,
+            this.BtnYaziciKaydi,
+            this.btnTarayiciKaydi,
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
             this.barButtonItem8,
             this.barButtonItem9,
             this.barButtonItem10,
-            this.barButtonItem11,
-            this.barButtonItem12,
-            this.barButtonItem13,
-            this.barButtonItem14,
-            this.barButtonItem15});
+            this.btnMarkaKayit,
+            this.btnModelKayit,
+            this.btnBirimKayit,
+            this.btnUnvanKayit,
+            this.barButtonItem15,
+            this.barButtonItem1,
+            this.barButtonItem2});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 16;
+            this.ribbonControl1.MaxItemId = 18;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -116,21 +121,23 @@ namespace BurdurAdliyeEnvanterSystem
             this.BtnBilgisayarKaydi.Name = "BtnBilgisayarKaydi";
             this.BtnBilgisayarKaydi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnBilgisayarKaydi_ItemClick);
             // 
-            // barButtonItem2
+            // BtnYaziciKaydi
             // 
-            this.barButtonItem2.Caption = "Yazıcı Kaydı";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.BtnYaziciKaydi.Caption = "Yazıcı Kaydı";
+            this.BtnYaziciKaydi.Id = 2;
+            this.BtnYaziciKaydi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnYaziciKaydi.ImageOptions.Image")));
+            this.BtnYaziciKaydi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnYaziciKaydi.ImageOptions.LargeImage")));
+            this.BtnYaziciKaydi.Name = "BtnYaziciKaydi";
+            this.BtnYaziciKaydi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYaziciKaydi_ItemClick);
             // 
-            // barButtonItem3
+            // btnTarayiciKaydi
             // 
-            this.barButtonItem3.Caption = "Tarayıcı Kaydı";
-            this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnTarayiciKaydi.Caption = "Tarayıcı Kaydı";
+            this.btnTarayiciKaydi.Id = 3;
+            this.btnTarayiciKaydi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTarayiciKaydi.ImageOptions.Image")));
+            this.btnTarayiciKaydi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTarayiciKaydi.ImageOptions.LargeImage")));
+            this.btnTarayiciKaydi.Name = "btnTarayiciKaydi";
+            this.btnTarayiciKaydi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTarayiciKaydi_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -180,37 +187,41 @@ namespace BurdurAdliyeEnvanterSystem
             this.barButtonItem10.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
             this.barButtonItem10.Name = "barButtonItem10";
             // 
-            // barButtonItem11
+            // btnMarkaKayit
             // 
-            this.barButtonItem11.Caption = "Marka Kayıt";
-            this.barButtonItem11.Id = 11;
-            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.barButtonItem11.Name = "barButtonItem11";
+            this.btnMarkaKayit.Caption = "Marka Kayıt";
+            this.btnMarkaKayit.Id = 11;
+            this.btnMarkaKayit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkaKayit.ImageOptions.Image")));
+            this.btnMarkaKayit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMarkaKayit.ImageOptions.LargeImage")));
+            this.btnMarkaKayit.Name = "btnMarkaKayit";
+            this.btnMarkaKayit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMarkaKayit_ItemClick);
             // 
-            // barButtonItem12
+            // btnModelKayit
             // 
-            this.barButtonItem12.Caption = "Model Kayıt";
-            this.barButtonItem12.Id = 12;
-            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.btnModelKayit.Caption = "Model Kayıt";
+            this.btnModelKayit.Id = 12;
+            this.btnModelKayit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnModelKayit.ImageOptions.Image")));
+            this.btnModelKayit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnModelKayit.ImageOptions.LargeImage")));
+            this.btnModelKayit.Name = "btnModelKayit";
+            this.btnModelKayit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModelKayit_ItemClick);
             // 
-            // barButtonItem13
+            // btnBirimKayit
             // 
-            this.barButtonItem13.Caption = "Birim Kayıt";
-            this.barButtonItem13.Id = 13;
-            this.barButtonItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.barButtonItem13.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
-            this.barButtonItem13.Name = "barButtonItem13";
+            this.btnBirimKayit.Caption = "Birim Kayıt";
+            this.btnBirimKayit.Id = 13;
+            this.btnBirimKayit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBirimKayit.ImageOptions.Image")));
+            this.btnBirimKayit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBirimKayit.ImageOptions.LargeImage")));
+            this.btnBirimKayit.Name = "btnBirimKayit";
+            this.btnBirimKayit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBirimKayit_ItemClick);
             // 
-            // barButtonItem14
+            // btnUnvanKayit
             // 
-            this.barButtonItem14.Caption = "Unvan Kayıt";
-            this.barButtonItem14.Id = 14;
-            this.barButtonItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
-            this.barButtonItem14.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
-            this.barButtonItem14.Name = "barButtonItem14";
+            this.btnUnvanKayit.Caption = "Unvan Kayıt";
+            this.btnUnvanKayit.Id = 14;
+            this.btnUnvanKayit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUnvanKayit.ImageOptions.Image")));
+            this.btnUnvanKayit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUnvanKayit.ImageOptions.LargeImage")));
+            this.btnUnvanKayit.Name = "btnUnvanKayit";
+            this.btnUnvanKayit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUnvanKayit_ItemClick);
             // 
             // barButtonItem15
             // 
@@ -219,6 +230,22 @@ namespace BurdurAdliyeEnvanterSystem
             this.barButtonItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.Image")));
             this.barButtonItem15.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.LargeImage")));
             this.barButtonItem15.Name = "barButtonItem15";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Personel İşlemleri";
+            this.barButtonItem1.Id = 16;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Personel Raporları";
+            this.barButtonItem2.Id = 17;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // ribbonPage1
             // 
@@ -245,8 +272,8 @@ namespace BurdurAdliyeEnvanterSystem
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.BtnBilgisayarKaydi);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BtnYaziciKaydi);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnTarayiciKaydi);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Kayıt ve Düzeltme İşlemleri";
             // 
@@ -298,14 +325,21 @@ namespace BurdurAdliyeEnvanterSystem
             // ribbonPage10
             // 
             this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup10});
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup12});
             this.ribbonPage10.Name = "ribbonPage10";
             this.ribbonPage10.Text = "PERSONEL";
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.AllowTextClipping = false;
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             // 
             // ribbonPage8
             // 
@@ -319,16 +353,16 @@ namespace BurdurAdliyeEnvanterSystem
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.AllowTextClipping = false;
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnMarkaKayit);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnModelKayit);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "Marka ve Model";
             // 
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.AllowTextClipping = false;
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup9.ItemLinks.Add(this.btnBirimKayit);
+            this.ribbonPageGroup9.ItemLinks.Add(this.btnUnvanKayit);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "Birim ve Unvanlar";
             // 
@@ -388,6 +422,7 @@ namespace BurdurAdliyeEnvanterSystem
             this.Name = "FullForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Envanter Takip Sistemi";
+            this.Load += new System.EventHandler(this.FullForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
@@ -404,8 +439,8 @@ namespace BurdurAdliyeEnvanterSystem
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.BarButtonItem BtnBilgisayarKaydi;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem BtnYaziciKaydi;
+        private DevExpress.XtraBars.BarButtonItem btnTarayiciKaydi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
@@ -425,10 +460,10 @@ namespace BurdurAdliyeEnvanterSystem
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem btnMarkaKayit;
+        private DevExpress.XtraBars.BarButtonItem btnModelKayit;
+        private DevExpress.XtraBars.BarButtonItem btnBirimKayit;
+        private DevExpress.XtraBars.BarButtonItem btnUnvanKayit;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage10;
@@ -436,6 +471,9 @@ namespace BurdurAdliyeEnvanterSystem
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage11;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
     }
 }
 

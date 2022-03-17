@@ -57,6 +57,8 @@ namespace BurdurAdliyeEnvanterSystem.Formlar
 
             txtid.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
             txtserino.Text = gridView1.GetFocusedRowCellValue("SERINO").ToString();
+            cmbmarka.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
+            cmbModel.Text = gridView1.GetFocusedRowCellValue("MODEL").ToString();
             textEdit1.Text = gridView1.GetFocusedRowCellValue("ZIMMET").ToString();
             textEdit1.Visible = false;
             if ((textEdit1.Text == "True")) chkzimmet.Checked = true;
