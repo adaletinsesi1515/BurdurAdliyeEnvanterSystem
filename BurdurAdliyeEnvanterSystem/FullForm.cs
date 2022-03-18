@@ -24,6 +24,7 @@ namespace BurdurAdliyeEnvanterSystem
         Formlar.FrmModelKayit frmModelKayit;
         Formlar.FrmBirimKayit frmBirimKayit;
         Formlar.FrmUnvanKayit frmUnvanKayit;
+        Formlar.FrmPersonelIslemleri frmPersonelIslemleri;
 
 
         private void BtnBilgisayarKaydi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -100,6 +101,16 @@ namespace BurdurAdliyeEnvanterSystem
                 frmUnvanKayit = new Formlar.FrmUnvanKayit();
                 frmUnvanKayit.MdiParent = this;
                 frmUnvanKayit.Show();
+            }
+        }
+
+        private void btnPersonelIslemleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmPersonelIslemleri == null || frmUnvanKayit.IsDisposed)
+            {
+                frmPersonelIslemleri = new Formlar.FrmPersonelIslemleri();
+                frmPersonelIslemleri.MdiParent = this;
+                frmPersonelIslemleri.Show();
             }
         }
     }

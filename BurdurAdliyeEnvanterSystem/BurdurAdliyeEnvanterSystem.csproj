@@ -93,6 +93,12 @@
     <Compile Include="Formlar\FrmModelKayit.Designer.cs">
       <DependentUpon>FrmModelKayit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmPersonelIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonelIslemleri.Designer.cs">
+      <DependentUpon>FrmPersonelIslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmTarayiciKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmModelKayit.resx">
       <DependentUpon>FrmModelKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmPersonelIslemleri.resx">
+      <DependentUpon>FrmPersonelIslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmTarayiciKayit.resx">
       <DependentUpon>FrmTarayiciKayit.cs</DependentUpon>
